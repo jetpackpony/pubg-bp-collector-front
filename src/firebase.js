@@ -2,12 +2,12 @@ import * as firebase from "firebase/app";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCvCaLrm6qZooSzIUbPpWxnjIkQ8jrvPSo",
-  authDomain: "pubg-bp-collector.firebaseapp.com",
-  databaseURL: "https://pubg-bp-collector.firebaseio.com",
-  projectId: "pubg-bp-collector",
-  storageBucket: "pubg-bp-collector.appspot.com",
-  messagingSenderId: "716604938921"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASEURL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID
 };
 
 const initFirebase = () => {

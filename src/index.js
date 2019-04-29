@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import initFirebase from './firebase';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 ReactDOM.render(<App firebase={initFirebase()}/>, document.getElementById('root'));
 
