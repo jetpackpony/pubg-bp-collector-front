@@ -1,12 +1,8 @@
 import React from 'react';
 import CollectForm from './CollectForm';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-function Graphs() {
-  return (
-    <h2>Graphs</h2>
-  );
-}
+import Graphs from './Graphs';
+import './App.scss';
 
 function App({ firebase }) {
   return (
